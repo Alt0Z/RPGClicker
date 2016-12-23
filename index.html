@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Text RPG</title>
+    <script src="scripts/main.js"></script>
+    <script defer src="scripts/test.js"></script>
+  </head>
+
+  <body>
+
+    <style>
+    #hero_box, #enemy_box {margin:50px;display: inline-block;}
+    #battle_icon {}
+    #enemy_hp_bar, #hero_hp_bar {border:1px solid black;background-color:gray;overflow: hidden;}
+    #hero_hp, #enemy_hp {border:1px solid black;background-color: lightgreen;}
+    #hero_xp_bar {border: 1px solid black; background-color:lightyellow;height:5px;overflow: hidden;}
+    #hero_xp {border: 1px solid black; background-color:yellow;height:5px;float:left;}
+    #name_bar,#enemy_name_bar,#param_bar {border:1px solid black;}
+    #info_field {border:1px solid black;width:600px;height:100px;background-color:lightblue;}
+    .box {width:128px;height:154px;border:1px solid black;}
+    </style>
+
+    <center><div id="container" style=" width:100%; height:1px; clear:both;">
+      <div id="hero_box" class="box">
+
+        <!-- Name Bar -->
+        <div id="name_bar">
+        <table>
+          <tr>
+            <td id="hero_desc"></td>
+          </tr>
+        </table>
+      </div>
+
+      <img id="hero_icon" src="images/Hero_1.png">
+
+      <div id="hero_hp_bar">
+      <div id="hero_hp">
+        HP
+      </div>
+      </div>
+      <!-- Hero Xp Bar -->
+      <div id="hero_xp_bar">
+        <div id="hero_xp">
+        </div>
+      </div>
+      <!-- Hero Parameters Bar -->
+      <div id="param_bar">
+        <table>
+          <tr>
+            <td id="hero_damage"></td>
+            <td id="hero_luck"></td>
+          </tr>
+        </table>
+        </div>
+        </div>
+
+        <img id="battle_icon" src="images/Battle_icon.png">
+
+        <!-- Enemy BOX -->
+        <div id= "enemy_box" class="box">
+
+          <!-- Name Bar -->
+          <div id="enemy_name_bar">
+          <table>
+            <tr>
+              <td id="enemy_desc">Troll</td>
+            </tr>
+          </table>
+        </div>
+
+        <img id="enemy_icon" src="images/Enemy_Troll_lvl_1.png">
+
+        <div id="enemy_hp_bar">
+        <div id="enemy_hp">
+          sdsd
+        </div>
+      </div>
+        <!-- Hero Parameters Bar -->
+        <div id="param_bar">
+          <table>
+            <tr>
+              <td id="enemy_damage">1</td>
+              <td id="enemy_luck">1</td>
+            </tr>
+          </table>
+          </div>
+        </div> <!-- Close enemy bar -->
+
+          <!--Enemy HP: <p id="enemy_hp"></p>-->
+          <div id="game_interface" style="padding:15px;margin:15px">
+            <input id="punch" type="button" value="Punch">
+            <input id="block" type="button" value="Block"></br>
+            <input id="restart" type="button" value="Restart the game">
+          </div>
+
+          <h2>Display field</h2>
+          <div id="info_field" type="output">
+            <!--<output id='d_field_string_1' style="float:left">Game information:</output> </br>
+            <output id='d_field_string_2' style="float:left">Game information:</output> </br>
+            <output id='d_field_string_3' style="float:left">Game information:</output> </br>
+            <output id='d_field_string_4' style="float:left">Game information:</output> </br>
+            <output id='d_field_string_5' style="float:left">Game information:</output> </br>-->
+          </div>
+    </div>
+
+  </center>
+  </body>
+</html>
