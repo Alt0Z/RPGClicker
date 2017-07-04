@@ -1,4 +1,3 @@
-//Объект: Главный герой
 hero = {
 name: 'Alex',
 lvl: 0,
@@ -11,7 +10,6 @@ damage: 3,
 luck: 2
 }
 
-//Объект: враг
 enemy = {
 name: 'enemy_parent',
 defHp: 5,
@@ -28,10 +26,8 @@ var isEnemyAttack = false;
 var isDefeat = false;
 var audioPunch = new Audio('sounds/punch.mp3');
 
-//Переписать код тут
 window.onload = function(){
 
- //Обработка удара + некоторые функции, которые будут обновляться по нажатию на punch
  document.getElementById('punch').onclick = function(){
    enemy.hp = enemy.hp - hero.damage;
    document.getElementById('info_field').innerHTML = hero.name + ' attacks ' + enemy.trol.name + '! </br>' + enemy.name + ' HP is ' + enemy.hp;
@@ -52,7 +48,6 @@ window.onload = function(){
 
  }
 
-//Обработка блоков
  document.getElementById('block').onmousedown = function(){
    isBlock = true;
  }
